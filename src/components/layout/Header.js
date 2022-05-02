@@ -15,6 +15,11 @@ function Header() {
       </h1>
       <nav>
         <ul>
+          {storedUserData.isLoggedIn && (
+            <li>
+              <Link to="/myitems">MyItems</Link>
+            </li>
+          )}
           <li>
             <Link to="/new-item">물건올리기</Link>
           </li>
@@ -40,14 +45,14 @@ function Header() {
             </li>
           )}
           {storedUserData.isLoggedIn && (
-            <li onClick={() => {
-              // Replace the token cookie to an empty value and dispatch the redux logout to clear state
-              document.cookie = `token=`
-              dispatch(logout());
-              }}>
-              <Link to='/'>
-                로그아웃
-              </Link>
+            <li
+              onClick={() => {
+                // Replace the token cookie to an empty value and dispatch the redux logout to clear state
+                document.cookie = `token=`;
+                dispatch(logout());
+              }}
+            >
+              <Link to="/">로그아웃</Link>
             </li>
           )}
         </ul>
