@@ -7,9 +7,10 @@ import NewItem from "./pages/NewItem";
 import Layout from "./components/layout/Layout";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import MyItems from "./pages/MyItems";
 
 import { useDispatch } from "react-redux";
-import { login } from "./redux/authSlice"
+import { login } from "./redux/authSlice";
 
 function App() {
   const token = document.cookie.split("=")[1];
@@ -49,13 +50,16 @@ function App() {
     const token = document.cookie.split("=")[1];
     // if the cookie is not there don't do anything
     // If the cookie is present, execute the autologin function
-    autologin()
+    autologin();
   }, []);
   return (
     <Layout>
       <Switch>
         <Route path="/" exact>
           <AllItems />
+        </Route>
+        <Route path="/myitems">
+          <MyItems />
         </Route>
         <Route path="/new-item">
           <NewItem />
