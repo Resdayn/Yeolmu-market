@@ -50,7 +50,9 @@ function App() {
     const token = document.cookie.split("=")[1];
     // if the cookie is not there don't do anything
     // If the cookie is present, execute the autologin function
-    autologin();
+    if (token) {
+      autologin();
+    }
   }, []);
   return (
     <Layout>
