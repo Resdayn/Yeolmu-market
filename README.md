@@ -38,7 +38,7 @@ In the current status, the application is able to do the following things:
 
 ## Installation and Running:
 
-**IMPORTANT**: This application requires the backend to be run alongside it locally. The API can be found <a src="">here</a>.
+**IMPORTANT**: This application requires the backend to be run alongside it locally. The API can be found <a href="https://github.com/Resdayn/Yeolmu-market-api">here</a>.
 
 First, build the docker image from the ```Dockerfile```
 ```code
