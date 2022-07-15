@@ -3,6 +3,8 @@
 Yeolmu Market
 ======
 
+<img style="text-align: center;" src="./github-repository-img/page-front.png"></img>
+
 This is the **frontend** application for the Yeolmu Market</a> project, which intends to be a clone of Dangeun Market (당근마켓, https://www.daangn.com/). It is basically a second hand online market where users can upload items to sell or give and they can be contacted by other users willing to buy.
 
 ## Technologies Used:
